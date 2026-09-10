@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-      <section className="md:grid grid-cols-3 gap-3 items-center">
+      <section className="md:grid grid-cols-3 gap-12 items-center">
         <div className="col-span-2 flex flex-col gap-9 items-start">
           <div className="mono text-xs tracking-wider border border-[#2b3541] bg-[#1e2731] px-6 py-3 rounded-sm">
             SELECT role FROM career WHERE skills IN (&apos;data&apos;,
