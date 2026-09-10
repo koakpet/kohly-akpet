@@ -1,6 +1,69 @@
 @import "tailwindcss";
 
-:root {
+:root{
+  --ink:#10161D;
+  --panel:#171F28;
+  --panel-2:#1B242E;
+  --paper:#E7EAE4;
+  --paper-dim:#9AA5AC;
+  --amber:#E7A33E;
+  --teal:#4FA9A0;
+  --line:#2B3541;
+  --line-soft:#1E2731;
+  --radius:4px;
+  --maxw:1040px;
+}
+ 
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+ 
+html{
+  scroll-behavior:smooth;
+}
+ 
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--font-space-grotesk), sans-serif;
+  line-height:1.55;
+  background-image:
+    linear-gradient(var(--line-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+  background-size:48px 48px;
+  background-position:-1px -1px;
+}
+ 
+a{
+  color:inherit;
+  text-decoration:none;
+}
+ 
+/* Shared utility classes — used across multiple components */
+.mono{
+  font-family:var(--font-ibm-plex-mono), monospace;
+}
+ 
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 28px;
+}
+ 
+@media (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior:auto;
+  }
+}
+ 
+
+
+
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +86,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
