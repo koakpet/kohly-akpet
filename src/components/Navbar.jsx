@@ -11,14 +11,14 @@ const navLinks = [
 export default function Navbar() {
   return (
     <>
-      <div className="bg-[#10161d] border-b border-[#1e2731] px-35 py-4 ">
+      <div className="bg-[#10161d] border-b border-[#1e2731] px-3 md:px-35 py-4 ">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="font-semibold text-lg">
+          <Link href="/" className="font-semibold text-2xl">
             Kohly Akpet
-            <span className="text-yellow-600">.</span>
+            <span className="text-[#e7a33e]">.</span>
           </Link>
 
-          <div className="flex gap-8">
+          <div className="md:flex gap-8 hidden">
             {navLinks.map((link) => {
               return (
                 <Link key={link.name} href={link.href}>
