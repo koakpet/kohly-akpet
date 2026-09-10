@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="mono text-sm tracking-widest text-[#9aa5ac]">
             05 - Contact
           </div>
-          <div className="text-3xl font-black tracking-wider">
+          <div className="text-2xl font-black tracking-wider">
             Let&apos;s work together
           </div>
         </div>

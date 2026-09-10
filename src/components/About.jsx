@@ -23,12 +23,12 @@ export default function About() {
         className="md:grid grid-cols-5 gap-12 items-center my-30"
       >
         <div className="col-span-3 flex flex-col gap-9">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2">
             <div className="mono text-sm tracking-widest text-[#9aa5ac]">
               01 - About
             </div>
 
-            <div className="text-3xl font-black tracking-wider">What I do</div>
+            <div className="text-2xl font-black tracking-wider">What I do</div>
           </div>
 
           <div className="md:hidden bg-[#1e2731] rounded-sm">
