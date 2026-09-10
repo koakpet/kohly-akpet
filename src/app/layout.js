@@ -17,7 +17,8 @@ const ibmPlexMono = IBM_Plex_Mono({
  
 export const metadata = {
   title: "Kohly Akpet Fullstack Developer and Business Intelligence Analyst",
-  description: "I am a Fullstack Developer and Business Intelligence Analyst",
+  description: "Portfolio of Kohly Akpet, a Business Intelligence Analyst and Fullstack Developer building data dashboards and web applications."
+
 };
 
 export default function RootLayout({ children }) {
