@@ -1,14 +1,32 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import {useState, useEffect} from "react";
 
 export default function Hero() {
+  const [blink, setBlink] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setBlink((prev) => !prev);
+    }, 900);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       <section className="md:grid grid-cols-3 gap-12 items-center">
         <div className="col-span-2 flex flex-col gap-9 items-start">
-          <div className="mono text-xs tracking-wider border border-[#2b3541] bg-[#1e2731] px-6 py-3 rounded-sm">
-            SELECT role FROM career WHERE skills IN (&apos;data&apos;,
-            &apos;code&apos;);
+          <div className="flex items-center border border-[#2b3541] bg-[#1e2731] px-6 py-3 rounded-lg">
+            <div className="mono text-xs md:tracking-wider">
+              SELECT role FROM career WHERE skills IN (&apos;data&apos;,
+              &apos;code&apos;);
+            </div>
+            <div
+              className={`h-6 w-0.5 bg-[#e7a33e] ${blink ? "opacity-100" : "opacity-0"}`}
+            ></div>
           </div>
 
           <div className="text-5xl font-black tracking-wider">
