@@ -1,70 +1,39 @@
+import Link from "next/link";
+
 const contacts = [
-  {title: "2024", description: "Business Intelligence Analsyt since"},
-  {title: "6", description: "ICT team members led"},
-  {title: "3", description: "Professional certifications"},
+  {name: "LinkedIn", link: "https://www.linkedin.com/in/kohly-akpet/"},
+  {name: "GitHub", link: "https://github.com/koakpet"},
 ];
 
 export default function Contact() {
   return (
     <>
-      <section
-        id="contact"
-        className="md:grid grid-cols-5 gap-12 items-center my-30"
-      >
-        <div className="col-span-3 flex flex-col gap-9">
-          <div className="flex flex-col gap-3">
-            <div className="mono text-sm tracking-widest text-[#9aa5ac]">
-              05 - Contact
-            </div>
-            <div className="text-3xl font-black tracking-wider">
-              Let&apos;s work together
-            </div>
+      <section id="contact" className="mt-30 mb-15 flex flex-col gap-7">
+        <div className="flex flex-col gap-3">
+          <div className="mono text-sm tracking-widest text-[#9aa5ac]">
+            05 - Contact
           </div>
-
-          <div className="md:hidden bg-[#1e2731] rounded-sm">
-            <div className="border border-[#2b3541] rounded-sm">
-              {data.map((data) => {
-                return (
-                  <div
-                    key={data.description}
-                    className="flex items-center justify-between px-3 py-3 border-b border-[#2b3541]"
-                  >
-                    <div className="mono text-[#e7a33e] text-xl font-bold">
-                      {data.title}
-                    </div>
-                    <div className="text-[#9aa5ac] text-sm">
-                      {data.description}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="text-3xl font-black tracking-wider">
+            Let&apos;s work together
           </div>
+        </div>
 
-          <div className="text-[#9aa5ac] flex flex-col gap-3">
+        <div className="md:flex md:justify-between">
+          <div className="mono text-sm text-[#9aa5ac]">
             Open to remote data analyst and fullstack roles.
           </div>
 
-          <div className=""></div>
-        </div>
-
-        <div className="hidden md:block col-span-2 bg-[#1e2731] rounded-sm">
-          <div className="border border-[#2b3541] rounded-sm">
-            {data.map((data) => {
+          <div className="flex gap-6 mono text-sm text-[#9aa5ac]  mt-18 md:mt-6">
+            {contacts.map((contact) => {
               return (
-                <div
-                  key={data.description}
-                  className="flex items-center justify-between px-3 py-3 border-b border-[#2b3541]"
-                >
-                  <div className="mono text-[#e7a33e] text-xl font-bold">
-                    {data.title}
-                  </div>
-                  <div className="text-[#9aa5ac] text-sm">
-                    {data.description}
-                  </div>
-                </div>
+                <Link key={contact.name} href={contact.link} target="_blank">
+                  <span className="hover:text-white">{contact.name}</span>
+                </Link>
               );
             })}
+            <a href="mailto:kmoakpet@gmail.com">
+              <span className="hover:text-white">Email</span>
+            </a>
           </div>
         </div>
       </section>
