@@ -28,7 +28,7 @@ const skills = [
 export default function Skills() {
   return (
     <>
-      <section id="projects" className="my-21">
+      <section id="skills" className="my-21">
         <div className="flex flex-col gap-2">
           <div className="mono text-sm tracking-widest text-[#9aa5ac]">
             02 - Skills
