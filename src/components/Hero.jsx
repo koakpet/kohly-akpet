@@ -33,7 +33,7 @@ export default function Hero() {
             I turn raw data <br /> into decisions and decisions into software.
           </div>
           <div className="text-[#9aa5ac]">
-            I scope, build and deliver end-to-end technical solutions - from PowerBI dadhboards that turn raw data into decisions, to full-stack web applications that run entire organizations. I don't just analyze the problem or manage the timeline, I ship the syst
+            I scope, build and deliver end-to-end technical solutions - from PowerBI dadhboards that turn raw data into decisions, to full-stack web applications that run entire organizations. I don't just analyze the problem or manage the timeline, I ship the systems.
           </div>
 
           <div className="mono text-sm font-bold flex gap-9">
